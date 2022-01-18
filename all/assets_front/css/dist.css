@@ -1,0 +1,297 @@
+
+.aside {
+  min-width:600px;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fafafa;
+  font-family: Helvetica, Arial, sans-serif;
+  border-right: 1px solid #333;
+  box-shadow:0 5px 15px rgba(0, 0, 0, 0.16);
+  z-index: 2000;
+  width: 0px;
+  min-width: 0px;
+  overflow: auto;
+  transition: 0.35s width ease, 0.35s min-width ease;
+}
+
+.aside .aside-header {
+	padding: 20px 15px;
+	padding-left: 20px;
+	
+	font-size: 16px;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-sizing:border-box;
+	position:relative;
+	
+}
+
+.aside .aside-header .close {
+    opacity: 1;
+    position: absolute;
+    left: 30px;
+    top: 60px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 36px;
+    background-color: #143b7b;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 50px;
+    padding-left: 4px;
+    text-shadow: none;
+}
+.aside .aside-header .close i{ line-height:20px;}
+.aside .aside-header .close:hover {
+    background-color: #2faff6;
+    color: #fff;
+}
+.aside .aside-contents {
+    padding: 15px;
+    padding-bottom: 1em;
+    box-sizing: border-box;
+   
+    display: block;
+    width:680px;
+	
+    box-sizing: border-box;
+}
+.aside  .btn-primary{
+	border-color: #a82243;
+    background-color: #a82243;
+    color: #fff;
+}
+.aside  .btn-primary:hover{
+	border-color: #7d0e29;
+    background-color: #7d0e29;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #7d0e29;
+    border-color: #7d0e29;
+}
+
+.aside.in {
+ 
+ width: 700px;
+}
+
+.aside-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+  transition: 0.2s opacity ease;
+  opacity: 0;
+  display: none;
+}
+
+.aside-backdrop.in {
+  display: block;
+  opacity: 0.5;
+}
+
+.card_seletbox {
+	display: table;
+	border-bottom: 1px solid #ECECEC;
+	margin-top: 8px;
+	padding-bottom: 8px;
+	width: 100%;
+}
+
+.card_seletbox .card_selet_thumble{ width:60px; height:64px; float:left; margin-right:10px; display:table-cell;}
+.card_seletbox .card_selet_thumble img{ width:100%; height:100%;}
+.card_seletbox .card_selet_body {
+	float: left;
+	display: table-cell;
+	position: relative;
+	box-sizing: border-box;
+	padding-right: 20px;
+	width: 74%;
+}
+.card_seletbox .card_selet_body a{ display:block; font-size:12px; font-weight:500; color:#000;}
+.card_seletbox .card_selet_body a:hover{color: #d3335c;}
+.card_seletbox .card_selet_body span.quantity {
+	width: 100%;
+	font-size: 12px;
+	font-weight: 300;
+	color: #d3335c;
+	margin:0;
+}
+.card_seletbox .card_selet_body .close_small{ max-width:10px; width:100%; position:absolute; right:0; top:0; opacity:0.5; cursor:pointer;}
+.card_seletbox .card_selet_body .close_small:hover{ opacity:1;}
+
+.total_area {
+	border-top: 1px solid #ECECEC;
+	border-bottom: 1px solid #ECECEC;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	line-height: 24px;
+	font-size:16px;
+	color:#000;
+    text-transform:uppercase;
+
+
+}
+.total_area span{ float:right; color: #d3335c;}
+
+
+
+
+
+
+
+
+
+/*table_css*/
+
+
+.instagram-carousel{ width:100%; display:block;}
+
+.instagram-carousel .owl-dots {
+    margin-top:0px;
+    text-align: center;
+    width: 100%;
+}
+.instagram-carousel button.owl-dot{background:#ffffff; width:10px; height:10px; margin:0 4px; border:2px solid #c3c3c3; border-radius:50%; outline:none; vertical-align:middle;}
+.instagram-carousel button.owl-dot.active{background:#04082f; border-color:#04082f;}
+
+
+.instagram_likebox {
+    background-color: #cfe1ff;
+    padding: 0px;
+    box-sizing: border-box;
+	margin-bottom:15px;
+}
+.instagram_likebox .likebox {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+	font-weight:500;
+	color:#000;
+    line-height: 28px;
+}
+.instagram_likebox .likebox.bg_blue{ background-color:#143b7b;  color:#fff; font-weight:700; display:block;}
+.instagram_likebox .likebox span {
+    display: block;
+    font-weight: 900;
+    font-size: 16px;
+}
+.instagram_likebox .likebox span i {
+    display: inline-block;
+    vertical-align: 3px;
+    font-size: 12px;
+    margin-left: 4px;
+}
+.instagram_likebox .likebox.bg_blue i{ font-size:22px;}
+.instagram_likebox .likebox.bg_blue span{ color:#fff; font-size:18px;}
+.instagram_likebox .likebox p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.instagram_box {
+    border: 1px solid rgba(215, 215, 215, 0.4);
+    box-sizing: border-box;
+    padding: 0;
+    cursor: pointer;
+    
+}
+.instagram_box .instagram_top {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+.instagram_box .instagram_top .textbox {
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+}
+.green{ color:#35b377;}
+.lightred{ color:#e35c28;}
+
+.instagram_box .instagram_thumble{ width:100%; display:flex; height:190px; overflow:hidden;}
+.instagram_box .instagram_thumble img {
+    width: 100%;
+    object-fit: cover;
+	transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -khtml-transition: all ease-in-out 0.5s;
+}
+.instagram_box:hover img{
+	transform: scale(1.2) rotateZ(-5deg);
+    -moz-transform: scale(1.2) rotateZ(-5deg);
+    -webkit-transform: scale(1.2) rotateZ(-5deg);
+    -o-transform: scale(1.2) rotateZ(-5deg);
+    opacity: 0.5;
+}
+.instagram_box .instagram_bootom{ box-sizing:border-box; padding:10px;}
+.instagram_box .instagram_bootom .instagram_bootom_top{ margin-bottom:10px;}
+.instagram_box .instagram_bootom .instagram_bootom_top ul{ margin:0; padding:0; list-style:none;}
+.instagram_box .instagram_bootom .instagram_bootom_top ul li{ display:inline-block; vertical-align:middle; margin-left:5px; font-size:12px; font-weight:600; color:#000;}
+.instagram_box .instagram_bootom .instagram_bootom_top ul li i{ display:inline-block; vertical-align:middle; margin-left:5px;}
+.instagram_box .instagram_bootom .instagram_bootom_top ul li:last-child{ float:right; margin-left:0; text-transform:capitalize; color:#999;}
+.instagram_box .instagram_bootom  p{ margin:0; padding:0; font-size:12px; color:#333; line-height:16px;}
+
+
+.asideprofile {
+    background-color: rgba(227, 227, 227, 0.42);
+    align-items: center;
+    /* display: flex; */
+    box-sizing: border-box;
+    padding: 15px 15px;
+    border-radius: 6px;
+}
+.asideprofile .aside_headerthumble {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 0px 4px rgba(20, 59, 123, 0.12);
+}
+.asideprofile .aside_headerthumble img {
+    width: 100%;
+    object-fit: cover;
+}
+.asideprofile .aside_contantbox ul{ margin:0; padding:0; list-style:none;}
+.asideprofile .aside_contantbox ul li{ display:block; font-size:14px; font-weight:400; color:#000; text-transform:capitalize;}
+.asideprofile .aside_contantbox ul li strong {
+    color: #143b7b;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.28);
+    padding-bottom: 2px;
+}
+.cardclick { width:50px; height:50px; overflow:hidden; text-align:center; border-radius:50%; line-height:50px; text-align:center; font-size:26px; margin-right:5px; font-weight:700;}
+
+.retingtopbox strong {
+    color: #ffd100;
+	font-weight:700;
+}
+.reting_area {
+    background-color: #2e96eb;
+    color: #fff;
+    font-size: 18px;
+	padding:10px 15px;
+	text-transform:capitalize;
+	font-weight:500;
+}
+.retingtopbox strong i{ display:inline-block; vertical-align:middle; margin-right:5px;}
